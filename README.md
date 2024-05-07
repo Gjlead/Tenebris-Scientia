@@ -4,7 +4,7 @@ As my final project for the "Introduction to Computer Science" course that I too
 
 This website project is a wonderful presentation of what I have learned during my time with CS50. In its implementation, I used a wild mixture of HTML, CSS, JavaScript, Bootstrap, Flask, Jinja and SQL, using pretty much everything we came across in the previous assignments apart from C and Scratch.
 
-![Picture of the Potion Shop](https://github.com/gjlead/Tenebris-Scientia/blob/master/readme-pic/Potion-Shop.jpg)
+![Picture of the Potion Shop](https://github.com/gjlead/Tenebris-Scientia/blob/master/readme-pic/Potion-Shop.png)
 
 ### Some personal highlights
 
@@ -31,3 +31,9 @@ I have learned a lot in the course of this project.
 - Unfortunately, hosting dynamic websites is not as simple and free as hosting static websites. So the plan to put the whole thing on GitHub Pages fell through.
 
 And as befits an IT project, this one also took almost twice as long as originally planned (6 weeks instead of 3-4). Partly because of the long break over Christmas and the end of the year, but also because of various unforeseen bugs and other difficulties that simply weren't on the agenda when the project was launched.
+<br />
+<br />
+<br />
+<br />
+<br />
+"flask run" to start.
