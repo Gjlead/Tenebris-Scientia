@@ -1,9 +1,6 @@
 # Tenebris scientia
-#### Video Demo:  https://youtu.be/qrPxo4nDQqE
 #### Description:
-As my final project for the "Introduction to Computer Science" course that I took at HarvardX at the end of 2023 I created a website for **Tenebris scientia**, a fictional magical university specializing in the dark arts, open to young magical individuals who where cast out for being different. On this website you can find information about the university itself, read news about the fictional world we are situated in, check out this year's winners of the annual poetry competition and - most important! - choose your own mix of ingredients for a potion in the **potion shop**.
-
-The centerpiece of this project is the **potion shop**. But more on that later.
+As my final project for the "Introduction to Computer Science" course that I took at HarvardX at the end of 2023 I created a website for **Tenebris scientia**, a fictional magical university specializing in the dark arts, open to young magical individuals who where cast out for being different. On this website you can find information about the university itself, read news about the fictional world we are situated in, check out this year's winners of the annual poetry competition and - most important! - choose your own mix of ingredients for a potion in the **potion shop**, the centerpiece of this project.
 
 This website project is a wonderful presentation of what I have learned during my time with CS50. In its implementation, I used a wild mixture of HTML, CSS, JavaScript, Bootstrap, Flask, Jinja and SQL, using pretty much everything we came across in the previous assignments apart from C and Scratch.
 
