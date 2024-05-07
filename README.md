@@ -4,6 +4,8 @@ As my final project for the "Introduction to Computer Science" course that I too
 
 This website project is a wonderful presentation of what I have learned during my time with CS50. In its implementation, I used a wild mixture of HTML, CSS, JavaScript, Bootstrap, Flask, Jinja and SQL, using pretty much everything we came across in the previous assignments apart from C and Scratch.
 
+![Picture of the Potion Shop](https://github.com/gjlead/Tenebris-Scientia/blob/master/readme-pic/Potion-Shop.jpg)
+
 ### Some personal highlights
 
 ### 1. The Bootstrap carousel in index.html.
