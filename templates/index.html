@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<div id="quoteCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <blockquote class="blockquote text-center">
+                <p>"The venerable Tenebris scientia University has been guiding students from all walks of life for many centuries, preparing them for the harsh reality outside its halls. Its reputation is legendary, its methodology notorious. For most, Tenebris scientia is and always will be the right choice."</p>
+                <footer class="blockquote-footer">Headmaster Nivuel Fuamatis</footer>
+            </blockquote>
+        </div>
+        <div class="carousel-item">
+            <blockquote class="blockquote text-center">
+                <p>"I love everything about Tenebris scientia, and I highly recommend anyone to enroll. There is no better magical university, period. The potion classes in particular are outstanding. I think even more of the budget should go to this department! (Please Professor Liquium, can you give me the antidote now?)"</p>
+                <footer class="blockquote-footer">Student Lendrin Tarsten, may he rest in peace.</footer>
+            </blockquote>
+        </div>
+        <div class="carousel-item">
+            <blockquote class="blockquote text-center">
+                <p>"How did I get here? Hey, you! Help me before I disappear aga-"</p>
+                <footer class="blockquote-footer">What was that? Must have been the wind...</footer>
+            </blockquote>
+        </div>
+        <div class="carousel-item">
+            <blockquote class="blockquote text-center">
+                <p>"The number of famous magicians and sorcerers who have graduated from Tenebris scientia speaks for itself. Follow in the footsteps of mighty icons such as Circe, Erebus the Deceiver and Lord Veldomert and become the next greatest wizard or witch of all time."</p>
+                <footer class="blockquote-footer">Daily Witcher News</footer>
+            </blockquote>
+        </div>
+        <div class="carousel-item">
+            <blockquote class="blockquote text-center">
+                <p>"In my time at Tenebris scientia I found power, money, friends and a partner. Saying "found" is still legit even when they belonged to someone else at that time, right?"</p>
+                <footer class="blockquote-footer">Lily Zari, Alumna</footer>
+            </blockquote>
+        </div>
+        <div class="carousel-item">
+            <blockquote class="blockquote text-center">
+                <p>21 days since the last grievous injury in the Dark Arts Department!</p>
+                <footer class="blockquote-footer">(As far as we know.)</footer>
+            </blockquote>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#quoteCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#quoteCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<h1>Excerpts from our University News</h1>
+<div class="newsShort">
+</div>
+{% endblock %}

@@ -1,0 +1,391 @@
+a{
+    color: #808080;
+}
+
+a:hover{
+    color: black;
+}
+
+.aboutFooter{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2%;
+    background-color: #dadada;
+}
+
+.base{
+    box-shadow: 0 0 10px rgba(22, 134, 179, 0.6) !important;
+}
+
+.blockquote{
+    font-size: 20px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #e0e0e0;
+    font-family: 'Times New Roman', Verdana, sans-serif;
+    text-align: justify;
+}
+
+/* Set a fixed height for each carousel item */
+.carousel-item{
+    height: 150px;
+}
+
+/* Customize the color and background of carousel controls */
+.carousel-control-prev,
+.carousel-control-next{
+    opacity: 0.8;
+}
+
+/* Remove the default arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-image: none;
+}
+
+/* Add own arrows for better property control */
+.carousel-control-next-icon:after{
+  content: '>';
+  font-size: 35px;
+  color: #590002;
+}
+
+.carousel-control-prev-icon:after{
+  content: '<';
+  font-size: 35px;
+  color: #590002;
+}
+
+.caves{
+    color: #335292;
+}
+
+.checkbox-container{
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.date{
+    font-size: 0.8em;
+}
+
+.default-main{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 2vw;
+}
+
+.fee-description,
+.sum-text{
+    text-align: left;
+}
+
+.fee-item,
+.sum-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fee-price,
+.sum-number{
+    text-align: right;
+}
+
+#filterButton{
+    margin-right: 60px;
+}
+
+#filterMenu{
+    background: white;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#filterMenuContainer{
+    position: fixed;
+    top: 80px; /* 10 + size of top bar, so it appears 10px underneath it. */
+    right: 10px;
+    visibility: hidden;
+}
+
+.forest{
+    color: #08340c;
+}
+
+.info-box{
+    box-shadow: 0 0 10px rgba(22, 134, 179, 0.6);
+    text-align: center;
+    margin: 5px; /* Without this the box-shadow gets clipped. */
+}
+
+.ingredient{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.ingredient-base{
+    color: #1686b3;
+}
+
+.ingredient-dubious{
+    color: #f40300;
+}
+
+.ingredient-effect{
+    font-style: italic;
+}
+
+.ingredient-list{
+    cursor: pointer;
+}
+
+.ingredient-name{
+    font-weight: bold;
+}
+
+.ingredient-poison{
+    color: #6f973e;
+}
+
+.ingredient-price{
+    text-align: right;
+}
+
+.ingredient-taste{
+    color: #804004;
+}
+
+.ingredient-vegan{
+    color: #217b0b;
+}
+
+li{
+    border-top: 1px solid black;
+    cursor: pointer;
+}
+
+.li-menu{
+    border-top: none;
+}
+
+.logo{
+    margin-right: 20px;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+}
+
+#menuDropdown{
+    position: sticky;
+    top: 50px;
+    background-color: #565e64;
+}
+
+.menuDropdownContainer{
+    display: none;
+}
+
+#menuDropdown>li>a{
+    color: #590002;
+}
+
+.menu-heading{
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+    font-size: 1.2em;
+}
+
+.news-item{
+    margin-bottom: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2%;
+    background-color: #dadada;
+}
+
+.news-title{
+    text-decoration: underline;
+}
+
+.notification{
+    position: fixed;
+    top: 80px; /* 10 + size of top bar, so it appears 10px underneath it. */
+    right: 10px;
+    background-color: #1686b3;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    white-space: normal;
+    max-width: 20vw;
+}
+
+p{
+    font-size: 1.1em;
+}
+
+.payment{
+    visibility: hidden;
+    margin-top: auto;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.poetry{
+    text-align: center;
+}
+
+.potion-fee,
+.sum-ingredients{
+    border-bottom: 1px solid #ccc;
+}
+
+.potion-main{
+    padding-top: 20px;
+}
+
+.potion-price{
+    padding-bottom: 5px;
+}
+
+.shop-header{
+    font-size: 26px;
+}
+
+.sidebar-shop{
+    display: inline-block;
+    position: relative;
+    height: calc(100vh - 100px);
+    margin: 5px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter{
+    width:200px;
+    overflow-y: auto;
+}
+
+.cart{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 220px;
+}
+
+#cart-wrapper{
+    overflow-y: auto;
+    position: relative;
+}
+
+.ingredients{
+    overflow-y: scroll;
+    flex: 1; /* Take up all unclaimed space in its container, but... */
+    max-width: 600px; /* ...only until it reaches its max-width of 600. */
+}
+
+.top-bar{
+    background-color: #590002;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between; /* Spaces items evenly */
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.university-name{
+    text-decoration: none;
+}
+
+.university-name:hover{
+    color: #808080; /* Same color as the link, so it looks like there is no hover effect at all. */
+}
+
+.university-name-container{
+    /* Container is needed so I can keep the name to the left with flex-grow, but prevent the href from encompassing the whole top bar. */
+    flex-grow: 1;
+    font-size: 20px;
+    color: #808080;
+}
+
+/* Reponsive design, change stuff for small screens */
+@media only screen and (max-width: 1280px){
+    .blockquote{
+        font-size: 18px;
+    }
+}
+
+/* Filters disappear. */
+@media only screen and (max-width: 883px){
+    .filter{
+        display:none;
+        width: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .blockquote{
+        font-size: 16px;
+    }
+
+    #filterMenuContainer{
+        visibility: visible;
+    }
+
+    .notification{
+        max-width: 165px;
+    }
+
+    .potion-main{
+        padding-top: 50px;
+    }
+
+    .sidebar-shop{
+        height: calc(100vh - 100px - 30px); /* Extra -30px to make room for filter button */
+    }
+}
+
+@media only screen and (max-width: 770px){
+    /* When the screen gets too small the carousel gets pretty ugly, so at some time it is for the best to just remove it. */
+    .carousel{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 675px){
+    .menu{
+        gap: 8px;
+    }
+
+    .university-name{
+        font-size: 16px;
+    }
+}
+
+/* The page links get summarized in a menu. */
+@media only screen and (max-width: 580px){
+    .menu{
+        display: none;
+    }
+
+    .menuDropdownContainer{
+        display: inline;
+    }
+}

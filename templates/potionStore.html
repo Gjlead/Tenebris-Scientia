@@ -1,0 +1,158 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <script src="{{ url_for('static', filename='shop.js') }}"></script>
+{% endblock %}
+
+{% block title %}
+    Potion Store
+{% endblock %}
+
+{% block main_class %}
+    potion-main
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="sidebar-shop filter">
+        <div class="shop-header">Filter</div>
+        <label class="checkbox-container" for="hideBase" data-filter="hideBase">
+            <input type="checkbox" value="hideBase" id="hideBase">
+            <span class="checkmark"></span>
+            Hide bases
+        </label>
+        <br />
+        <label class="checkbox-container" for="showVegan" data-filter="showVegan">
+            <input type="checkbox" value="showVegan" id="showVegan">
+            <span class="checkmark"></span>
+            Only vegan
+        </label>
+        <br />
+        <label class="checkbox-container" for="showPoison" data-filter="showPoison">
+            <input type="checkbox" value="showPoison" id="showPoison">
+            <span class="checkmark"></span>
+            Only poisonous
+        </label>
+        <br />
+        <label class="checkbox-container" for="hidePoison" data-filter="hidePoison">
+            <input type="checkbox" value="hidePoison" id="hidePoison">
+            <span class="checkmark"></span>
+            Hide poisonous
+        </label>
+        <br />
+        <label class="checkbox-container" for="hideDubious" data-filter="hideDubious">
+            <input type="checkbox" value="hideDubious" id="hideDubious">
+            <span class="checkmark"></span>
+            Hide dubious
+        </label>
+        <br />
+        <label class="checkbox-container" for="hideTaste" data-filter="hideTaste">
+            <input type="checkbox" value="hideTaste" id="hideTaste">
+            <span class="checkmark"></span>
+            Hide bad-tasting
+        </label>
+    </div>
+    <div class="sidebar-shop ingredients">
+        <div class="shop-header">Potion Ingredients</div>
+        <div class="ingredient-list" id="ingredient-list">
+            {% for base in bases %}
+                <div class="ingredient base" data-name="{{ base.name }}" data-base="1">
+                    <div class="ingredient-name">{{ base.name }}</div>
+                    <div class="ingredient-desc">{{ base.description }}</div>
+                    <div class="ingredient-base">Base ingredient - pick exactly one.</div>
+                    {% if base.is_vegan == 1 %}
+                        <div class="ingredient-vegan">VEGAN</div>
+                    {% endif %}
+                    <div class="ingredient-effect">{{ base.effect }}</div>
+                    <div class="ingredient-price">{{ base.price }}</div>
+                </div>
+            {% endfor %}
+            {% for ingredient in ingredients %}
+                <div class="ingredient" data-name="{{ ingredient.name }}" data-base="0">
+                    <div class="ingredient-name">{{ ingredient.name }}</div>
+                    <div class="ingredient-desc">{{ ingredient.description }}</div>
+                    {% if ingredient.is_vegan == 1 %}
+                        <div class="ingredient-vegan">VEGAN</div>
+                    {% endif %}
+                    {% if ingredient.is_poisonous == 1 %}
+                        <div class="ingredient-poison">POISONOUS</div>
+                    {% endif %}
+                    {% if ingredient.is_dubious == 1 %}
+                        <div class="ingredient-dubious">DUBIOUS</div>
+                    {% endif %}
+                    {% if ingredient.tastes_bad == 1 %}
+                        <div class="ingredient-taste">BAD TASTE</div>
+                    {% endif %}
+                    <div class="ingredient-effect">{{ ingredient.effect }}</div>
+                    <div class="ingredient-price">{{ ingredient.price }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="sidebar-shop cart">
+        <div id="cart-wrapper">
+            <div class="shop-header">Your Potion</div>
+            <ul id="cart-list" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to remove ingredient."></ul>
+        </div>
+        <div class="payment" id="payment">
+            <div class="sum-ingredients" id="sum-ingredients">
+                <div class="sum-item">
+                    <span class="sum-text"></span>
+                    <span class="sum-number"></span>
+                </div>
+            </div>
+            <div class="potion-fee" id="potion-fee">
+                <div class="fee-item">
+                    <span class="fee-description"></span>
+                    <span class="fee-price"></span>
+                </div>
+            </div>
+            <div class="potion-price" id="potion-price"></div>
+            <button class="button-buy" id="button-buy">Buy now</button>
+        </div>
+    </div>
+</div>
+
+<div id="filterMenuContainer">
+    <!-- Collapsible with Bootstrap: -->
+    <button data-bs-toggle="collapse" data-bs-target="#filterMenu" id="filterButton">Show Filters</button>
+
+    <div id="filterMenu" class="collapse">
+        <label class="checkbox-container" for="hideBase" data-filter="hideBase">
+            <input type="checkbox" value="hideBase" id="hideBaseCollapsible">
+            <span class="checkmark"></span>
+            Hide bases
+        </label>
+        <br />
+        <label class="checkbox-container" for="showVegan" data-filter="showVegan">
+            <input type="checkbox" value="showVegan" id="showVeganCollapsible">
+            <span class="checkmark"></span>
+            Only vegan
+        </label>
+        <br />
+        <label class="checkbox-container" for="showPoison" data-filter="showPoison">
+            <input type="checkbox" value="showPoison" id="showPoisonCollapsible">
+            <span class="checkmark"></span>
+            Only poisonous
+        </label>
+        <br />
+        <label class="checkbox-container" for="hidePoison" data-filter="hidePoison">
+            <input type="checkbox" value="hidePoison" id="hidePoisonCollapsible">
+            <span class="checkmark"></span>
+            Hide poisonous
+        </label>
+        <br />
+        <label class="checkbox-container" for="hideDubious" data-filter="hideDubious">
+            <input type="checkbox" value="hideDubious" id="hideDubiousCollapsible">
+            <span class="checkmark"></span>
+            Hide dubious
+        </label>
+        <br />
+        <label class="checkbox-container" for="hideTaste" data-filter="hideTaste">
+            <input type="checkbox" value="hideTaste" id="hideTasteCollapsible">
+            <span class="checkmark"></span>
+            Hide bad-tasting
+        </label>
+    </div>
+</div>
+{% endblock %}
